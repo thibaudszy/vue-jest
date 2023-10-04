@@ -108,6 +108,7 @@ function processTemplate(descriptor, filename, config) {
     isFunctional: template.attrs.functional,
     preprocessLang: template.lang,
     preprocessOptions: vueJestConfig[template.lang],
+    prettify: false,
     ...userTemplateCompilerOptions,
     compilerOptions: {
       ...(!isVue27 ? { optimize: false } : {}),

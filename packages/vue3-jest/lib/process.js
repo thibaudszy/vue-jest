@@ -114,6 +114,7 @@ function processTemplate(descriptor, filename, config) {
     filename,
     preprocessLang: template.lang,
     preprocessOptions: vueJestConfig[template.lang],
+    prettify: false,
     compilerOptions: {
       bindingMetadata: bindings,
       mode: 'module',
